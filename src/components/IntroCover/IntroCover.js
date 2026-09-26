@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { getAssetPath } from "../../utils/basePath";
 import styles from "./IntroCover.module.css";
 
 const COVER_ROLES = [
@@ -587,7 +588,7 @@ export default function IntroCover() {
           <div className={styles.portraitBacklight} aria-hidden="true" />
 
           <Image
-            src="/yolo_cutout_png.png"
+            src={getAssetPath("/yolo_cutout_png.png")}
             alt="Ayush Raj — AI/ML Engineer"
             width={740}
             height={920}

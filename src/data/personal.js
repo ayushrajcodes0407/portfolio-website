@@ -20,17 +20,17 @@ export const personalData = {
   aboutStatement:
     "I build at the intersection of software, data and artificial intelligence.",
   aboutDescription:
-    "I am a Computer Science & Engineering student at Birla Institute of Technology (BIT Mesra), Off Campus Deoghar, specializing in Artificial Intelligence, Machine Learning, Computer Vision, Data Science, and Full-Stack Software Engineering. I focus on developing real-world intelligent systems with rigorous mathematical foundations, scalable backend architectures, and high-performance user interfaces.",
+    "I am a Computer Science & Engineering student at Birla Institute of Technology, Ranchi, specializing in Artificial Intelligence, Machine Learning, Computer Vision, Data Science, and Full-Stack Software Engineering. I focus on developing real-world intelligent systems with rigorous mathematical foundations, scalable backend architectures, and high-performance user interfaces.",
   education: {
     degree: "B.Tech in Computer Science & Engineering",
-    institution: "Birla Institute of Technology (BIT Mesra)",
-    campus: "Off Campus Deoghar",
+    institution: "Birla Institute of Technology, Ranchi",
+    campus: "Ranchi",
   },
   metadataCards: [
     {
       label: "EDUCATION",
       title: "B.Tech CSE",
-      subtitle: "BIT Mesra (Off Campus Deoghar)",
+      subtitle: "Birla Institute of Technology, Ranchi",
       icon: "🎓",
     },
     {

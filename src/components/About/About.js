@@ -4,6 +4,7 @@ import styles from "./About.module.css";
 import SectionHeading from "../shared/SectionHeading";
 import AnimateOnScroll from "../shared/AnimateOnScroll";
 import { personalData } from "../../data/personal";
+import { getAssetPath } from "../../utils/basePath";
 
 export default function About() {
   return (
@@ -28,7 +29,7 @@ export default function About() {
                 </h3>
                 <p className={styles.bioText}>
                   I am a Computer Science &amp; Engineering undergraduate at{" "}
-                  <strong className={styles.highlightText}>Birla Institute of Technology (BIT) Mesra</strong>, Off Campus Deoghar. 
+                  <strong className={styles.highlightText}>Birla Institute of Technology, Ranchi</strong>. 
                   My engineering practice centers on building real-world AI/ML systems, high-accuracy computer-vision models, and robust full-stack web platforms.
                 </p>
                 <p className={styles.bioText}>
@@ -100,7 +101,7 @@ export default function About() {
 
             <div className={styles.resumeActions}>
               <a
-                href="/resume.pdf"
+                href={getAssetPath("/resume.pdf")}
                 download="Ayush_Raj_Resume.pdf"
                 className={styles.resumeDownloadBtn}
                 aria-label="Download Ayush Raj Resume PDF"
@@ -114,7 +115,7 @@ export default function About() {
               </a>
 
               <a
-                href="/resume.pdf"
+                href={getAssetPath("/resume.pdf")}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.resumeViewBtn}

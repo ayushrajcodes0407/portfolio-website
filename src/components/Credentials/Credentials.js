@@ -6,6 +6,7 @@ import styles from "./Credentials.module.css";
 import SectionHeading from "../shared/SectionHeading";
 import AnimateOnScroll from "../shared/AnimateOnScroll";
 import { certifications, academicCourses } from "../../data/credentials";
+import { getAssetPath } from "../../utils/basePath";
 
 export default function Credentials() {
   const [activeModal, setActiveModal] = useState(null); // { type: 'image' | 'pdf', title, institution, src, images, activeImgIndex }
@@ -133,7 +134,7 @@ export default function Credentials() {
                             onClick={() => openImageModal(cert, idx)}
                           >
                             <Image
-                              src={imgSrc}
+                              src={getAssetPath(imgSrc)}
                               alt={`BCCL Certificate Document ${idx + 1}`}
                               width={320}
                               height={220}
@@ -249,7 +250,7 @@ export default function Credentials() {
                       </button>
 
                       <a
-                        href={cert.fileUrl}
+                        href={getAssetPath(cert.fileUrl)}
                         download="Ayush_Raj_NTNU_Research_Certificate.pdf"
                         className={styles.secondaryActionBtn}
                       >
@@ -395,7 +396,7 @@ export default function Credentials() {
 
                 {activeModal.type === "pdf" && (
                   <a
-                    href={activeModal.fileUrl}
+                    href={getAssetPath(activeModal.fileUrl)}
                     download="Ayush_Raj_NTNU_Research_Certificate.pdf"
                     className={styles.ctrlBtnLink}
                   >
@@ -417,7 +418,7 @@ export default function Credentials() {
               {activeModal.type === "image" && activeModal.images && (
                 <div className={styles.imageViewerWrapper}>
                   <Image
-                    src={activeModal.images[activeModal.activeImgIndex]}
+                    src={getAssetPath(activeModal.images[activeModal.activeImgIndex])}
                     alt={`${activeModal.title} Document ${activeModal.activeImgIndex + 1}`}
                     width={1200}
                     height={850}
@@ -430,7 +431,7 @@ export default function Credentials() {
               {activeModal.type === "pdf" && (
                 <div className={styles.pdfFrameWrapper}>
                   <object
-                    data={activeModal.fileUrl}
+                    data={getAssetPath(activeModal.fileUrl)}
                     type="application/pdf"
                     className={styles.pdfObject}
                     aria-label="Certificate Document"
@@ -438,7 +439,7 @@ export default function Credentials() {
                     <div className={styles.pdfFallback}>
                       <p>Your browser does not support embedded PDF viewing.</p>
                       <a
-                        href={activeModal.fileUrl}
+                        href={getAssetPath(activeModal.fileUrl)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.fallbackLink}

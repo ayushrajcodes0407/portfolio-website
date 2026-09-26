@@ -50,8 +50,8 @@ export const experience = [
   {
     type: "education",
     title: "Bachelor of Technology (B.Tech) in Computer Science & Engineering",
-    organization: "Birla Institute of Technology (BIT) Mesra",
-    location: "Off Campus Deoghar, India",
+    organization: "Birla Institute of Technology, Ranchi",
+    location: "Ranchi, Jharkhand, India",
     period: "Undergraduate",
     status: "Current",
     description:

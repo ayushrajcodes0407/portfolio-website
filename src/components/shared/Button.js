@@ -1,4 +1,5 @@
 import styles from "./Button.module.css";
+import { getAssetPath } from "../../utils/basePath";
 
 export default function Button({
   children,
@@ -11,11 +12,9 @@ export default function Button({
   ...props
 }) {
   const classNames = `${styles.button} ${styles[variant]} ${className}`;
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  const resolvedHref =
-    href && href.startsWith("/") && !href.startsWith("//") && basePath
-      ? `${basePath}${href}`
-      : href;
+  const resolvedHref = href && href.startsWith("/") && !href.startsWith("//")
+    ? getAssetPath(href)
+    : href;
 
   if (href) {
     return (
