@@ -1,4 +1,5 @@
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const isGitHubActions = process.env.GITHUB_ACTIONS === 'true';
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || (isGitHubActions ? '/portfolio-website' : '');
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -12,3 +13,4 @@ const nextConfig = {
 };
 
 export default nextConfig;
+
