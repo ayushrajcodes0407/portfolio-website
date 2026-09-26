@@ -1,0 +1,155 @@
+.github {
+  padding: 6rem 0;
+  position: relative;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.repoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.repoCard {
+  background: rgba(12, 17, 30, 0.7);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.75rem;
+  backdrop-filter: blur(12px);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s var(--ease-smooth);
+}
+
+.repoCard:hover {
+  border-color: var(--border-hover);
+  background: rgba(18, 26, 46, 0.85);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.repoHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+}
+
+.repoIconRow {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.gitIcon {
+  color: var(--accent-blue-light);
+}
+
+.repoName {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.externalArrow {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.repoCard:hover .externalArrow {
+  color: var(--accent-blue-light);
+  transform: translate(2px, -2px);
+}
+
+.repoDesc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.repoFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.langIndicator {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.langDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.langName {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+.tagGroup {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.smallTag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+}
+
+.ctaWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.githubCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-sans);
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.25s var(--ease-smooth);
+}
+
+.githubCta:hover {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: var(--accent-blue-light);
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.25);
+}
+
+@media (max-width: 768px) {
+  .repoGrid {
+    grid-template-columns: 1fr;
+  }
+}

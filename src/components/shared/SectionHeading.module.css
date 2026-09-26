@@ -1,0 +1,83 @@
+.heading {
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.eyebrowWrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  background: rgba(59, 130, 246, 0.08);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.eyebrowDot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-blue-light);
+  box-shadow: 0 0 8px var(--accent-blue);
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-blue-light);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.035em;
+  color: #ffffff;
+  line-height: 1.15;
+  margin-bottom: 0.85rem;
+}
+
+.subtitle {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  color: var(--text-secondary);
+  max-width: 640px;
+  line-height: 1.6;
+  margin: 0 auto;
+}
+
+.left .subtitle {
+  margin: 0;
+}
+
+.lineAccent {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.left .lineAccent {
+  justify-content: flex-start;
+}
+
+.lineGlow {
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-blue) 0%, transparent 100%);
+  border-radius: 2px;
+}
+
+.center .lineGlow {
+  background: linear-gradient(90deg, transparent 0%, var(--accent-blue) 50%, transparent 100%);
+}
