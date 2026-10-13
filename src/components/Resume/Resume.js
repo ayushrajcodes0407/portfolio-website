@@ -75,6 +75,32 @@ export default function Resume() {
                           ))}
                         </div>
                       )}
+
+                      {item.certificateUrl && (
+                        <div style={{ marginTop: "0.85rem" }}>
+                          <a
+                            href={item.certificateUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            style={{
+                              display: "inline-flex",
+                              alignItems: "center",
+                              gap: "0.35rem",
+                              fontSize: "0.74rem",
+                              fontFamily: "var(--font-mono)",
+                              color: "var(--accent-blue-light)",
+                              textDecoration: "none",
+                              background: "rgba(59, 130, 246, 0.08)",
+                              padding: "0.3rem 0.65rem",
+                              borderRadius: "4px",
+                              border: "1px solid rgba(59, 130, 246, 0.25)",
+                            }}
+                          >
+                            <span>Verify Credential</span>
+                            <span style={{ fontSize: "0.8rem" }}>↗</span>
+                          </a>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </AnimateOnScroll>

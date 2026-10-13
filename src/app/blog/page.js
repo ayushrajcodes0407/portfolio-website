@@ -3,9 +3,9 @@ import { getAllPosts } from "../../lib/blog";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Blog | YourName — ML & AI Insights",
+  title: "Blog | Ayush Raj - ML & AI Insights",
   description:
-    "Articles and insights on machine learning, artificial intelligence, generative AI, and data science by YourName.",
+    "Articles and insights on machine learning, artificial intelligence, generative AI, and data science by Ayush Raj.",
 };
 
 export default function BlogPage() {
@@ -20,7 +20,7 @@ export default function BlogPage() {
           </Link>
           <h1 className={styles.title}>Blog & Insights</h1>
           <p className={styles.subtitle}>
-            Deep dives into ML, AI, GenAI, and data science — learnings,
+            Deep dives into ML, AI, GenAI, and data science: learnings,
             tutorials, and project write-ups.
           </p>
         </div>

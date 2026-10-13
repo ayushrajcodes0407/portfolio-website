@@ -12,7 +12,7 @@ export const certifications = [
     title: "Industrial ML & Computer Vision Certification",
     issuer: "Bharat Coking Coal Limited (BCCL)",
     role: "Machine Learning & Computer Vision Intern",
-    period: "Dec 2025 — Jan 2026",
+    period: "Dec 2025 – Jan 2026",
     category: "Industrial Certifications",
     type: "Internship & Project Credential",
     description:
@@ -26,16 +26,17 @@ export const certifications = [
   },
   {
     id: "ntnu-research-cert",
-    title: "NTNU International Research Internship",
+    title: "NTNU International Research Internship Credential",
     issuer: "Norwegian University of Science and Technology (NTNU)",
-    role: "International Research Intern",
-    period: "2025",
+    role: "AI/ML Research Intern (Supervisor: Dr. Alok Mishra)",
+    period: "May 2026 – Jul 2026",
     category: "Research Fellowships",
     type: "Academic Research Credential",
     description:
-      "International research fellowship covering advanced computational workflows, machine learning experimentation, and scientific methodology.",
+      "International research fellowship covering advanced computational workflows, transformer architectures, and machine learning research under Dr. Alok Mishra.",
     fileUrl: "/Ayush Raj NTNU Reserach Internship Certificate.pdf",
-    skills: ["Academic Research", "Machine Learning", "Scientific Computing"],
+    url: "https://drive.google.com/file/d/1dPgN9Jx7c2ayMANA8B1snZ739uw-I8H4/view?usp=drive_link",
+    skills: ["Academic Research", "Machine Learning", "Transformers", "NLP"],
     featured: true,
   },
   {
@@ -66,6 +67,13 @@ export const certifications = [
 
 export const academicCourses = [
   {
+    institution: "Harvard University / HarvardX",
+    courseId: "CS50x",
+    title: "CS50x: Introduction to Computer Science",
+    period: "Aug 2025 – Oct 2025",
+    focus: "C, Python, SQL, algorithms, data structures, memory management, and computational problem solving.",
+  },
+  {
     institution: "Stanford OpenCourseWare",
     courseId: "CS221",
     title: "Artificial Intelligence: Principles and Techniques",
@@ -93,6 +101,7 @@ export const academicCourses = [
     institution: "Udemy / Krish Naik",
     courseId: "Bootcamp",
     title: "Complete Data Science, Machine Learning, Deep Learning & NLP Bootcamp",
-    focus: "Comprehensive industry data science pipelines, statistical testing, MLOps basics, and NLP applications.",
+    period: "May 2025 – Jul 2025",
+    focus: "Comprehensive industry data science pipelines, statistical testing, scikit-learn, deep learning, and NLP applications.",
   },
 ];

@@ -181,7 +181,7 @@ export default function Navbar() {
             href="#contact"
             onClick={(e) => handleNavClick(e, "#contact")}
             className={styles.letsTalkBtn}
-            aria-label="Let's Talk — Contact Ayush"
+            aria-label="Let's Talk - Contact Ayush"
           >
             <span className={styles.talkText}>LET&apos;S TALK</span>
             <svg

@@ -4,7 +4,7 @@ export const personalData = {
   eyebrow: "AI/ML ENGINEER • SOFTWARE ENGINEER • DATA SCIENTIST",
   headline: "BUILDING INTELLIGENT SYSTEMS FOR THE REAL WORLD.",
   intro:
-    "I build at the intersection of software, data and artificial intelligence — taking complex computational concepts from research and architecture to production deployment.",
+    "I build at the intersection of software, data and artificial intelligence, taking complex computational concepts from research and architecture to production deployment.",
   roles: [
     "AI Systems",
     "Computer Vision",
@@ -20,17 +20,18 @@ export const personalData = {
   aboutStatement:
     "I build at the intersection of software, data and artificial intelligence.",
   aboutDescription:
-    "I am a Computer Science & Engineering student at Birla Institute of Technology, Ranchi, specializing in Artificial Intelligence, Machine Learning, Computer Vision, Data Science, and Full-Stack Software Engineering. I focus on developing real-world intelligent systems with rigorous mathematical foundations, scalable backend architectures, and high-performance user interfaces.",
+    "I am a Computer Science & Engineering undergraduate (2024–2028) at Birla Institute of Technology, Mesra, specializing in Artificial Intelligence, Machine Learning, Computer Vision, Data Science, and Full-Stack Software Engineering. I focus on developing real-world intelligent systems with rigorous mathematical foundations, scalable backend architectures, and high-performance user interfaces.",
   education: {
     degree: "B.Tech in Computer Science & Engineering",
-    institution: "Birla Institute of Technology, Ranchi",
-    campus: "Ranchi",
+    institution: "Birla Institute of Technology, Mesra",
+    campus: "Mesra",
+    period: "2024–2028",
   },
   metadataCards: [
     {
       label: "EDUCATION",
-      title: "B.Tech CSE",
-      subtitle: "Birla Institute of Technology, Ranchi",
+      title: "B.Tech CSE (2024–28)",
+      subtitle: "Birla Institute of Technology, Mesra",
       icon: "🎓",
     },
     {

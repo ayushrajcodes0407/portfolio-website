@@ -55,21 +55,39 @@ export default function CurrentlyBuilding() {
                     ))}
                   </div>
 
-                  {item.github && (
-                    <a
-                      href={item.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.sourceBtn}
-                      aria-label={`View repository for ${item.title}`}
-                    >
-                      <span>Lab Source</span>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <line x1="7" y1="17" x2="17" y2="7"></line>
-                        <polyline points="7 7 17 7 17 17"></polyline>
-                      </svg>
-                    </a>
-                  )}
+                  <div className={styles.actionBtns}>
+                    {item.github && (
+                      <a
+                        href={item.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.sourceBtn}
+                        aria-label={`View repository for ${item.title}`}
+                      >
+                        <span>Lab Source</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <line x1="7" y1="17" x2="17" y2="7"></line>
+                          <polyline points="7 7 17 7 17 17"></polyline>
+                        </svg>
+                      </a>
+                    )}
+                    {item.demo && (
+                      <a
+                        href={item.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.sourceBtn}
+                        aria-label={`View live demo for ${item.title}`}
+                      >
+                        <span>Live Demo</span>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    )}
+                  </div>
                 </div>
 
                 <div className={styles.scannerLine}></div>

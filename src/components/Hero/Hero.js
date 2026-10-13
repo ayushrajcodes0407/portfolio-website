@@ -206,7 +206,7 @@ export default function Hero() {
 
               {/* Concentric Orbital Rings with Depth & Motion */}
               <div className={styles.orbitalSystem} aria-hidden="true">
-                {/* Orbital Ring 1 (Inner — Fast subtle rotation) */}
+                {/* Orbital Ring 1 (Inner: Fast subtle rotation) */}
                 <div className={`${styles.orbitTrack} ${styles.orbitTrackInner}`}>
                   <div className={`${styles.orbitNode} ${styles.nodeLlm}`}>
                     <span className={styles.nodePhoton} />
@@ -218,7 +218,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Orbital Ring 2 (Middle — Counter rotation) */}
+                {/* Orbital Ring 2 (Middle: Counter rotation) */}
                 <div className={`${styles.orbitTrack} ${styles.orbitTrackMiddle}`}>
                   <div className={`${styles.orbitNode} ${styles.nodeVision}`}>
                     <span className={styles.nodePhoton} />
@@ -230,7 +230,7 @@ export default function Hero() {
                   </div>
                 </div>
 
-                {/* Orbital Ring 3 (Outer — Slow expansive rotation) */}
+                {/* Orbital Ring 3 (Outer: Slow expansive rotation) */}
                 <div className={`${styles.orbitTrack} ${styles.orbitTrackOuter}`}>
                   <div className={`${styles.orbitNode} ${styles.nodeReasoning}`}>
                     <span className={styles.nodePhoton} />

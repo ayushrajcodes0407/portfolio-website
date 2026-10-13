@@ -28,8 +28,8 @@ export default function About() {
                   &ldquo;{personalData.aboutStatement}&rdquo;
                 </h3>
                 <p className={styles.bioText}>
-                  I am a Computer Science &amp; Engineering undergraduate at{" "}
-                  <strong className={styles.highlightText}>Birla Institute of Technology, Ranchi</strong>. 
+                  I am a Computer Science &amp; Engineering undergraduate (2024–2028) at{" "}
+                  <strong className={styles.highlightText}>Birla Institute of Technology, Mesra</strong>. 
                   My engineering practice centers on building real-world AI/ML systems, high-accuracy computer-vision models, and robust full-stack web platforms.
                 </p>
                 <p className={styles.bioText}>

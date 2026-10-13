@@ -9,26 +9,15 @@ export const categories = [
 
 export const currentlyBuilding = [
   {
-    id: "be11-tournament-engine",
-    title: "BE11 — Match & Tournament Engine",
-    status: "Active Engineering",
-    category: "Full-Stack Systems",
+    id: "hra-mental-roberta-lab",
+    title: "HRA Mental-RoBERTa: Risk-Aware Clinical NLP",
+    status: "Research Prototype",
+    category: "AI / Intelligent Systems",
     description:
-      "Architecting automated tournament brackets, real-time match scheduling algorithms, and high-concurrency slot booking pipelines for the BE11 sports platform.",
-    techStack: ["TypeScript", "React", "Node.js", "Express", "Prisma", "PostgreSQL", "Socket.io"],
-    github: "https://github.com/ayushrajcodes0407",
-    metrics: "Sub-50ms slot allocation & atomic transaction locks",
-  },
-  {
-    id: "edge-vision-ppe",
-    title: "Edge Vision Multi-Class Industrial PPE Streamer",
-    status: "Lab Experiment",
-    category: "Computer Vision",
-    description:
-      "Optimizing YOLO inference pipelines on edge hardware for multi-camera video feeds, real-time bounding box tracking, and automated safety breach alerting.",
-    techStack: ["Python", "YOLO", "OpenCV", "CUDA", "Flask", "Streamlit"],
-    github: "https://github.com/ayushrajcodes0407",
-    metrics: "Sub-second inference across live multi-stream feeds",
+      "Hierarchical risk-aware transformer architecture decoupling binary triage from multi-class severity screening and suicidal ideation detection with rule-based safety thresholds.",
+    techStack: ["PyTorch", "RoBERTa", "Hugging Face", "Clinical NLP", "Scikit-learn"],
+    github: "https://github.com/ayushrajcodes0407/HRA-Mental-Roberta-2026",
+    metrics: "Two-stage hierarchical screening with bootstrap validation",
   },
   {
     id: "artificial-wisdom-engine",
@@ -36,60 +25,83 @@ export const currentlyBuilding = [
     status: "Research & Prototype",
     category: "AI / Intelligent Systems",
     description:
-      "Building a dual-engine decision framework integrating dense vector retrieval (FAISS), tabular gradient-boosted models, and SHAP explainability matrices for high-stakes decision contexts.",
+      "Dual-engine decision framework integrating dense vector retrieval (FAISS), tabular gradient-boosted trees (XGBoost/LightGBM), and SHAP explainability matrices for high-stakes decision contexts.",
     techStack: ["Python", "XGBoost", "LightGBM", "FAISS", "Sentence-Transformers", "SHAP"],
-    github: "https://github.com/ayushrajcodes0407",
+    github: "",
     metrics: "Hybrid semantic-tabular fusion architecture",
+  },
+  {
+    id: "data-sarthi-platform",
+    title: "Data Sarthi: Automated EDA & ML Benchmarking",
+    status: "Deployed & Maintained",
+    category: "Machine Learning",
+    description:
+      "Interactive data analysis workbench providing automated exploratory profiling, statistical summaries, quality diagnostics, visual distribution charts, and ML baseline benchmarks.",
+    techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Streamlit", "Matplotlib"],
+    github: "https://github.com/ayushrajcodes0407/data_sarthi",
+    demo: "https://data-sarthi.vercel.app/",
+    metrics: "Automated end-to-end data exploration & baseline benchmarking",
+  },
+  {
+    id: "be11-tournament-engine",
+    title: "BE11: Match & Tournament Engine",
+    status: "In Progress",
+    category: "Full-Stack Systems",
+    description:
+      "Architecting automated tournament brackets, real-time match scheduling algorithms, and high-concurrency slot booking pipelines for the BE11 sports platform.",
+    techStack: ["TypeScript", "React", "Node.js", "Express", "Prisma", "PostgreSQL"],
+    github: "",
+    metrics: "Sub-50ms slot allocation & atomic transaction locks",
   },
 ];
 
 export const featuredProjects = [
   {
-    id: "jarvis-ai-agent",
+    id: "hra-mental-roberta",
     number: "01",
-    title: "JARVIS — AI AGENT",
-    subtitle: "Autonomous Task Execution & Intelligent Conversational Assistant",
-    category: "AI / Intelligent Systems",
+    title: "HRA Mental-RoBERTa",
+    subtitle: "Hierarchical Risk-Aware Mental-Health Screening Framework",
+    category: "Machine Learning",
     shortDescription:
-      "An intelligent AI agent architecture designed for natural language interaction, automated tool execution, contextual reasoning, and multi-step task execution.",
+      "A hierarchical transformer-based clinical screening architecture decoupling binary triage from multi-class severity classification and suicidal ideation detection.",
     overview:
-      "JARVIS is an autonomous AI agent engineered to bridge conversational natural language understanding with direct computational actions. It parses user intent, dynamically determines tool calling sequences, executes programmatic tasks, and returns structured synthesis in real-time.",
+      "A research-grade NLP framework designed for early, risk-sensitive screening of psychological conditions from unstructured social-media text. Developed as part of international research with NTNU (Dr. Alok Mishra) and BIT Mesra (Dr. Kamta Nath Mishra). Features a two-stage hierarchical pipeline with a rule-based safety decision layer and rigorous statistical validation.",
     techStack: [
-      "Python",
-      "LLM APIs",
-      "Prompt Engineering",
-      "Tool Calling",
-      "AsyncIO",
-      "Automation Engine",
-      "NLP",
+      "RoBERTa",
+      "PyTorch",
+      "Hugging Face",
+      "Clinical NLP",
+      "Statistical Validation",
+      "Scikit-learn",
     ],
     links: {
-      github: "https://github.com/ayushrajcodes0407",
+      github: "https://github.com/ayushrajcodes0407/HRA-Mental-Roberta-2026",
       demo: "",
     },
     featured: true,
     metrics: [
-      { label: "Execution", value: "Multi-Tool" },
-      { label: "Interaction", value: "Conversational" },
-      { label: "Reasoning", value: "Contextual" },
+      { label: "Architecture", value: "Two-Stage NLP" },
+      { label: "Backbone", value: "Mental-RoBERTa" },
+      { label: "Screening Accuracy", value: ">90% System-Level" },
     ],
     caseStudy: {
       problem:
-        "Standard conversational AI chatbots provide static text outputs but lack the capability to orchestrate real-time system tasks, interact with programmatic toolchains, or maintain task-oriented state across multi-step objectives.",
+        "Standard flat multi-class classifiers suffer from severe class imbalance and unacceptable false-negative rates on acute psychological distress and suicidal ideation signals.",
       solution:
-        "Engineered an agentic interaction framework featuring intent classification, modular tool-calling executors, error recovery loops, and conversational memory pipelines.",
+        "Engineered a two-stage hierarchical transformer architecture that separates broad triage (Normal vs. At-Risk) from granular multi-class severity classification, fortified with deterministic safety thresholds.",
       architecture: [
-        "Intent Parsing: Evaluates user prompts to determine if direct generation, factual retrieval, or multi-step tool execution is required.",
-        "Tool Execution Engine: Pluggable execution registry allowing the agent to execute system scripts, query databases, and automate workflows safely.",
-        "Context Management: Retains conversational state and intermediate execution logs for multi-turn iterative problem solving.",
-        "Response Synthesis: Delivers refined, natural language explanations alongside structured execution outputs.",
+        "Stage 1 Binary Triage: High-sensitivity filter isolating potential psychological distress indicators from benign content.",
+        "Stage 2 Multi-Class Classifier: Fine-tuned RoBERTa allocating specific condition tags and suicidal ideation markers.",
+        "Safety Decision Layer: Rule-based thresholding prioritizing recall on acute risk signals to prevent false negatives.",
+        "Empirical Validation: Rigorous bootstrap confidence intervals, confusion matrix error decomposition, and TP/FP/FN analysis.",
       ],
       highlights: [
-        "Modular architecture allowing flexible tool integration and automated execution.",
-        "Conversational memory maintaining coherence over multi-turn interactions.",
-        "Robust error-handling and retry logic for tool calling failures.",
+        "Decoupled triage pipeline minimizing critical false-negative diagnostic errors.",
+        "Class-weighted cross-entropy loss addressing extreme clinical dataset imbalances.",
+        "Evaluated with bootstrap confidence intervals and confusion matrix error decomposition.",
+        "Research prototype submitted for review; not a clinically validated diagnostic system.",
       ],
-      results: "Built a functional AI agent pipeline capable of natural language task reasoning and automated workflow execution.",
+      results: "Developed an empirical NLP framework achieving >90% system-level screening accuracy under clinically aligned metrics.",
     },
   },
   {
@@ -112,7 +124,7 @@ export const featuredProjects = [
       "SHAP",
     ],
     links: {
-      github: "https://github.com/ayushrajcodes0407",
+      github: "",
       demo: "",
     },
     featured: true,
@@ -141,55 +153,103 @@ export const featuredProjects = [
     },
   },
   {
-    id: "hra-mental-roberta",
+    id: "bccl-ppe-compliance",
     number: "03",
-    title: "HRA Mental-RoBERTa",
-    subtitle: "Hierarchical Risk-Aware Mental-Health Screening Framework",
-    category: "Machine Learning",
+    title: "BCCL Vision PPE Compliance System",
+    subtitle: "Real-Time Industrial Safety & Protective Gear Detection",
+    category: "Computer Vision",
     shortDescription:
-      "A hierarchical transformer-based clinical screening architecture decoupling binary triage from multi-class severity classification and suicidal ideation detection.",
+      "A real-time computer-vision safety system developed during my BCCL internship for automated PPE compliance (helmets, vests, safety gear) in industrial coal mining environments.",
     overview:
-      "A research-grade NLP framework designed for early, risk-sensitive screening of psychological conditions from unstructured social-media text. Features a two-stage hierarchical pipeline with a rule-based safety decision layer and rigorous statistical validation.",
+      "Developed at Bharat Coking Coal Limited (BCCL) to address workplace safety standards in harsh industrial terrains. The model automates continuous surveillance for protective gear compliance without requiring manual monitoring.",
     techStack: [
-      "RoBERTa",
-      "PyTorch",
-      "Hugging Face",
-      "Clinical NLP",
-      "Statistical Validation",
-      "Scikit-learn",
+      "YOLOv8",
+      "Python",
+      "Computer Vision",
+      "OpenCV",
+      "Flask",
+      "Streamlit",
     ],
     links: {
-      github: "https://github.com/ayushrajcodes0407/HRA-Mental-Roberta-2026",
+      github: "",
       demo: "",
     },
     featured: true,
     metrics: [
-      { label: "Pipeline", value: "Two-Stage" },
-      { label: "Backbone", value: "RoBERTa" },
-      { label: "Validation", value: "Bootstrap CI" },
+      { label: "Annotated Frames", value: "5,000+" },
+      { label: "Safety Detection", value: "~77% mAP" },
+      { label: "Edge Latency", value: "<1s Latency" },
     ],
     caseStudy: {
       problem:
-        "Standard flat multi-class classifiers suffer from severe class imbalance and unacceptable false-negative rates on acute psychological distress and suicidal ideation signals.",
+        "In industrial mining operations, manual safety compliance monitoring is hazardous, labor-intensive, and cannot provide continuous 24/7 coverage across distributed hazardous work zones.",
       solution:
-        "Engineered a two-stage hierarchical transformer architecture that separates broad triage (Normal vs. At-Risk) from granular multi-class severity classification, fortified with deterministic safety thresholds.",
+        "Built a specialized deep-learning object detection pipeline using custom-trained YOLOv8 architectures capable of identifying hard hats, reflective vests, and safety gear in low-light and dusty environments.",
       architecture: [
-        "Stage 1 Binary Triage: High-sensitivity filter isolating potential psychological distress indicators from benign content.",
-        "Stage 2 Multi-Class Classifier: Fine-tuned RoBERTa allocating specific condition tags and suicidal ideation markers.",
-        "Safety Decision Layer: Rule-based thresholding prioritizing recall on acute risk signals to prevent false negatives.",
-        "Empirical Validation: Rigorous bootstrap confidence intervals and confusion matrix error decomposition.",
+        "Data Engineering: Assembled, cleaned, and annotated 5,000+ domain-specific industrial images under severe lighting variations.",
+        "Model Training: Fine-tuned YOLOv8 object detection networks with specialized bounding-box regression loss.",
+        "Inference & API: Flask-based inference engine delivering sub-second frame processing and automated breach logging.",
+        "Interface: Streamlit operations dashboard displaying real-time video stream annotations and compliance logs.",
       ],
       highlights: [
-        "Decoupled triage pipeline minimizing critical false-negative diagnostic errors.",
-        "Class-weighted cross-entropy loss addressing extreme clinical dataset imbalances.",
-        "Comprehensive cross-corpus generalization and statistical significance testing.",
+        "Curated and labeled a 5,000+ image dataset under real-world mining and coal field conditions.",
+        "Achieved approximately 77% mean Average Precision (mAP) on critical safety gear classes.",
+        "Enabled sub-second inference latency for immediate non-compliance alerts.",
       ],
-      results: "Developed an empirical NLP framework optimized for high-sensitivity screening and clinical decision support.",
+      results: "Delivered a verified ~77% mAP detection pipeline with sub-second latency across 5,000+ annotated industrial images.",
+    },
+  },
+  {
+    id: "bccl-predictive-analytics",
+    number: "04",
+    title: "BCCL Predictive Analytics Platform",
+    subtitle: "Coal Production Forecasting & Operational Dispatch Planning",
+    category: "Machine Learning",
+    shortDescription:
+      "Predictive modeling and operational analytics framework developed during BCCL internship for industrial telemetry, coal-production forecasting, and dispatch planning.",
+    overview:
+      "Applied statistical machine learning and exploratory time-series modeling to historical operational data from mining operations across 7 locations in Dhanbad to forecast production bottlenecks, dispatch schedules, and reserves.",
+    techStack: [
+      "Python",
+      "Scikit-learn",
+      "Random Forest",
+      "FastAPI",
+      "Streamlit",
+      "OpenAI API",
+      "Pandas",
+    ],
+    links: {
+      github: "",
+      demo: "",
+    },
+    featured: true,
+    metrics: [
+      { label: "Historical Data", value: "3 Years Mining" },
+      { label: "Predictive Power", value: "R²: 0.85–0.92" },
+      { label: "Interface", value: "FastAPI + LLM" },
+    ],
+    caseStudy: {
+      problem:
+        "Industrial coal mining operations generate vast quantities of operational and machinery data, but raw logs remain siloed, preventing proactive maintenance and operational optimization.",
+      solution:
+        "Developed a multi-output predictive analytics pipeline using Random Forest regression and preprocessing transformers to model coal production, dispatch volumes, and reserve depletion.",
+      architecture: [
+        "Data Engineering: Aggregated and preprocessed 3 years of mining logs across 7 Dhanbad operational locations.",
+        "Feature Engineering: Created rolling temporal aggregates, lagged production metrics, cost factors, and ColumnTransformer pipelines.",
+        "Predictive Modeling: Multi-output Random Forest regression modeling achieving R² of 0.85 to 0.92.",
+        "Interactive Dashboards: Built FastAPI + Streamlit interface with an integrated conversational LLM interface for natural-language queries.",
+      ],
+      highlights: [
+        "Extracted actionable operational signals from complex industrial mining logs.",
+        "Engineered temporal features capturing shift-based and machinery-utilization trends.",
+        "Integrated conversational OpenAI querying for immediate stakeholder decision support.",
+      ],
+      results: "Achieved R² of 0.85–0.92 on coal production and dispatch forecasting across 7 operational mining locations.",
     },
   },
   {
     id: "data-sarthi",
-    number: "04",
+    number: "05",
     title: "Data Sarthi",
     subtitle: "Automated Exploratory Data Analysis & Machine Learning Platform",
     category: "Machine Learning",
@@ -207,14 +267,14 @@ export const featuredProjects = [
       "Seaborn",
     ],
     links: {
-      github: "https://github.com/ayushrajcodes0407",
-      demo: "",
+      github: "https://github.com/ayushrajcodes0407/data_sarthi",
+      demo: "https://data-sarthi.vercel.app/",
     },
     featured: true,
     metrics: [
       { label: "Workflow", value: "Automated" },
       { label: "Analytics", value: "Real-Time" },
-      { label: "Interface", value: "Interactive" },
+      { label: "Benchmarking", value: "Multi-Model ML" },
     ],
     caseStudy: {
       problem:
@@ -232,12 +292,110 @@ export const featuredProjects = [
         "Modular pipeline adaptable to diverse tabular data schemas.",
         "Clear comparative evaluation tables across standard ML metrics (Accuracy, F1, RMSE, R²).",
       ],
-      results: "Created an end-to-end automated data exploration and baseline modeling workbench.",
+      results: "Created an end-to-end automated data exploration and baseline modeling workbench with live deployment.",
+    },
+  },
+  {
+    id: "loan-approval-prediction",
+    number: "06",
+    title: "Loan Approval Prediction",
+    subtitle: "ML Baselines & LLM-Assisted Financial Risk Decision Support",
+    category: "Machine Learning",
+    shortDescription:
+      "An experimental financial decision-support prototype comparing baseline machine learning models with contextual LLM reasoning for credit risk assessment.",
+    overview:
+      "Built a predictive risk-evaluation system comparing traditional machine learning classifiers (Random Forest, Logistic Regression) with an LLM-assisted decision engine for credit assessment in the Indian financial context. Integrates applicant profile data with explainable AI reasoning.",
+    techStack: [
+      "Python",
+      "Scikit-learn",
+      "Random Forest",
+      "Logistic Regression",
+      "OpenAI API",
+      "Flask",
+      "Pandas",
+      "XAI",
+    ],
+    links: {
+      github: "",
+      demo: "",
+    },
+    featured: true,
+    metrics: [
+      { label: "Dataset Scale", value: "10K+ Records" },
+      { label: "Baseline Accuracy", value: "~89% Accuracy" },
+      { label: "Decision Lift", value: "~12% Quality Lift" },
+    ],
+    caseStudy: {
+      problem:
+        "Conventional credit scoring models evaluate static numerical features but miss nuanced contextual risk factors. Unchecked rule engines lack flexibility, while pure black-box models lack interpretability for applicant disclosures.",
+      solution:
+        "Built an experimental decision-support pipeline evaluating 10,000+ credit records, comparing standard Scikit-learn tabular baselines with an LLM-assisted contextual risk assessment engine deployed in Flask.",
+      architecture: [
+        "Data Preprocessing: Automated cleaning, missing-value imputation, and feature encoding across 10K+ applicant profiles on the Credit Risk Dataset.",
+        "Baseline ML Models: Evaluated Random Forest and Logistic Regression classifiers, establishing an ~89% predictive accuracy baseline.",
+        "LLM Contextual Reasoning: Integrated OpenAI API for qualitative applicant factor analysis (employment stability, regional context, CIBIL depth).",
+        "Comparative Dashboard: Flask web interface displaying side-by-side model predictions and decision explanations.",
+      ],
+      highlights: [
+        "Demonstrated ~89% baseline classification accuracy on Credit Risk dataset.",
+        "Achieved ~12% qualitative decision improvement using LLM-assisted context assessment.",
+        "Provided clear explainability layer for risk attribution.",
+        "Experimental prototype; not a validated commercial lending system.",
+      ],
+      results: "Built and evaluated a prototype financial risk analysis system combining statistical machine learning with contextual LLM decision support.",
+    },
+  },
+  {
+    id: "twitter-sentiment-analysis",
+    number: "07",
+    title: "Twitter/X Sentiment Analysis",
+    subtitle: "NLP Sentiment Classification & Real-Time Social Polarity Dashboard",
+    category: "Machine Learning",
+    shortDescription:
+      "A production-grade NLP application for real-time Twitter/X sentiment classification and polarity scoring using VADER lexicon heuristics and TF-IDF machine learning pipelines.",
+    overview:
+      "An intelligent natural language processing and machine learning analytics platform designed to evaluate, classify, and visualize emotional polarity across social media text in real time. Features single tweet classification, compound polarity scoring (-1.0 to +1.0), and batch CSV processing.",
+    techStack: [
+      "Python",
+      "NLP",
+      "VADER",
+      "Scikit-learn",
+      "TF-IDF",
+      "Streamlit",
+      "Pandas",
+    ],
+    links: {
+      github: "https://github.com/ayushrajcodes0407/twitter-sentiment-analysis",
+      demo: "https://twitter-sentiment-analysis-qsbvpku4tmcngnasys43qf.streamlit.app/",
+    },
+    featured: true,
+    metrics: [
+      { label: "Lexicon", value: "VADER NLP" },
+      { label: "Dataset", value: "1.6M Tweets" },
+      { label: "Inference", value: "Sub-Second" },
+    ],
+    caseStudy: {
+      problem:
+        "Analyzing unstructured microblogging social text in real time is hindered by informal slang, abbreviations, emojis, and nuanced sentiment negations.",
+      solution:
+        "Engineered a dual-engine architecture combining VADER social-media lexicon heuristics with an offline supervised TF-IDF + Logistic Regression pipeline trained on 1.6 million Sentiment140 tweets.",
+      architecture: [
+        "Text Preprocessing: Regex sanitization, URL/handle stripping, stopword filtering, and Porter stemming.",
+        "Lexicon Valence Engine: Calibrates compound polarity (-1.0 to +1.0) with granular valence distribution percentages.",
+        "Supervised Model: Benchmarking TF-IDF vector representations with Logistic Regression classification.",
+        "Interactive Dashboard: Streamlit application with polarity distribution charts and batch CSV data export.",
+      ],
+      highlights: [
+        "Integrated VADER lexicon heuristics optimized specifically for social media microtext.",
+        "Sub-second real-time sentiment scoring across positive, negative, and neutral classes.",
+        "Batch analysis pipeline with downloadable annotated CSV reports.",
+      ],
+      results: "Built and deployed an end-to-end NLP sentiment intelligence system with sub-second latency.",
     },
   },
   {
     id: "spotify-recommender",
-    number: "05",
+    number: "08",
     title: "Spotify Recommendation System",
     subtitle: "Acoustic Feature Similarity & Music Recommendation Engine",
     category: "Recommendation Systems",
@@ -250,12 +408,13 @@ export const featuredProjects = [
       "Machine Learning",
       "Scikit-learn",
       "Cosine Similarity",
+      "Streamlit",
       "Pandas",
       "Vector Embeddings",
     ],
     links: {
-      github: "https://github.com/ayushrajcodes0407",
-      demo: "",
+      github: "https://github.com/ayushrajcodes0407/Spotify-Content-Based-Recommendation-System",
+      demo: "https://ayushrajcodes0407-spotify-content-based-recommendation-lab.streamlit.app/",
     },
     featured: true,
     metrics: [
@@ -272,7 +431,7 @@ export const featuredProjects = [
         "Feature Normalization: Preprocesses and normalizes diverse acoustic attributes into standardized continuous feature vectors.",
         "Similarity Engine: Implements optimized cosine similarity and nearest-neighbor lookups across the audio feature matrix.",
         "Personalization Layer: Aggregates user listening histories to construct composite user preference profiles.",
-        "Recommendation Delivery: Ranks and serves top-K candidate songs matching the user's acoustic profile.",
+        "Recommendation Delivery: Ranks and serves top-K candidate songs matching the user's acoustic profile via an interactive Streamlit UI.",
       ],
       highlights: [
         "Vectorized acoustic feature matching across multi-attribute audio dimensions.",
@@ -283,152 +442,58 @@ export const featuredProjects = [
     },
   },
   {
-    id: "netflix-recommender",
-    number: "06",
-    title: "Netflix Context-Based Recommendation System",
-    subtitle: "Context-Aware Content Recommendation & Metadata Similarity Engine",
-    category: "Recommendation Systems",
+    id: "jarvis-ai-agent",
+    number: "09",
+    title: "JARVIS: Voice Assistant & AI Agent",
+    subtitle: "Speech Recognition, Wake-Word Detection & System Automation",
+    category: "AI / Intelligent Systems",
     shortDescription:
-      "A context-aware recommendation system designed to recommend Netflix-style media content based on contextual preference signals, genre clustering, and content similarity.",
+      "A Python-based intelligent voice assistant engineered for real-time speech recognition, wake-word detection, conversational command execution, and automated workflow control.",
     overview:
-      "The system combines natural language processing of plot descriptions with structured metadata (cast, director, genre, maturity rating) to compute content similarity vectors and deliver contextually relevant media recommendations.",
+      "JARVIS is a modular voice assistant and system automation agent. It integrates continuous acoustic listening, speech-to-text processing, text-to-speech synthesis, intent parsing, and programmatic system action execution in Python.",
     techStack: [
       "Python",
+      "Speech Recognition",
+      "Pyttsx3",
       "NLP",
-      "TF-IDF",
-      "Cosine Similarity",
-      "Scikit-learn",
-      "Pandas",
-      "Streamlit",
+      "Wake-Word Detection",
+      "Automation Engine",
+      "AsyncIO",
     ],
     links: {
-      github: "https://github.com/ayushrajcodes0407",
+      github: "",
       demo: "",
     },
     featured: true,
     metrics: [
-      { label: "NLP Engine", value: "TF-IDF / Text" },
-      { label: "Ranking", value: "Context-Aware" },
-      { label: "Interface", value: "Interactive" },
+      { label: "Interaction", value: "Voice / Audio" },
+      { label: "Listening", value: "Continuous" },
+      { label: "Execution", value: "System Tools" },
     ],
     caseStudy: {
       problem:
-        "Recommending relevant video content based solely on collaborative ratings frequently fails when user interaction data is sparse or when contextual nuance in plot narratives is ignored.",
+        "Standard conversational interfaces require manual text input, restricting hands-free operational control and direct hardware system automation.",
       solution:
-        "Architected a context-aware content recommendation system integrating TF-IDF narrative vectorization with multi-attribute categorical metadata similarity.",
+        "Engineered a Python-based voice interface featuring microphone audio stream capture, wake-word activation, offline/online speech recognition, and modular command routing.",
       architecture: [
-        "Text Vectorization: Processes plot summaries and synopses into TF-IDF vector embeddings with n-gram extraction.",
-        "Metadata Fusion: Combines narrative text embeddings with weighted categorical features (directors, cast, genre tags).",
-        "Similarity Computation: Evaluates pairwise cosine similarity matrices to identify semantic content clusters.",
-        "Interactive UI: Streamlit application allowing users to search titles, adjust contextual weights, and receive instant recommendations.",
+        "Audio Capture & Wake Word: Continuous background audio stream monitoring for target trigger phrase detection.",
+        "Speech Recognition: Transcribes user voice commands into structured text with noise-filtering thresholds.",
+        "Intent Parsing: Maps natural language queries to local system operations, web navigation, and automation scripts.",
+        "Voice Synthesis: Audio feedback generation using speech synthesis engines.",
       ],
       highlights: [
-        "Combined unstructured plot narratives with structured categorical metadata.",
-        "Adjustable contextual weighting based on user preference priorities.",
-        "Clean interactive preview interface for exploring related content clusters.",
+        "Continuous hands-free wake-word detection and prompt processing.",
+        "Extensible plugin architecture for custom automation routines.",
+        "Robust error recovery handling ambiguous or inaudible audio signals.",
       ],
-      results: "Engineered a context-aware media recommendation engine capable of semantic plot matching and multi-attribute candidate retrieval.",
-    },
-  },
-  {
-    id: "bccl-ppe-compliance",
-    number: "07",
-    title: "BCCL Vision PPE Compliance System",
-    subtitle: "Real-Time Industrial Safety & Protective Gear Detection",
-    category: "Computer Vision",
-    shortDescription:
-      "A real-time computer-vision safety system developed during my BCCL internship for automated PPE compliance (helmets, vests, safety gear) in industrial coal mining environments.",
-    overview:
-      "Developed at Bharat Coking Coal Limited (BCCL) to address workplace safety standards in harsh industrial terrains. The model automates continuous surveillance for protective gear compliance without requiring manual monitoring.",
-    techStack: [
-      "YOLO",
-      "Python",
-      "Computer Vision",
-      "OpenCV",
-      "Flask",
-      "Streamlit",
-    ],
-    links: {
-      github: "https://github.com/ayushrajcodes0407",
-      demo: "",
-    },
-    featured: true,
-    metrics: [
-      { label: "Annotated Frames", value: "5,000+" },
-      { label: "Detection Accuracy", value: "~77% mAP" },
-      { label: "Edge Latency", value: "Sub-Second" },
-    ],
-    caseStudy: {
-      problem:
-        "In industrial mining operations, manual safety compliance monitoring is hazardous, labor-intensive, and cannot provide continuous 24/7 coverage across distributed hazardous work zones.",
-      solution:
-        "Built a specialized deep-learning object detection pipeline using custom-trained YOLO architectures capable of identifying hard hats, reflective vests, and safety harnesses in low-light and dusty environments.",
-      architecture: [
-        "Data Engineering: Assembled, cleaned, and annotated 5,000+ domain-specific industrial images with extreme lighting variations.",
-        "Model Training: Fine-tuned YOLO object detection networks with specialized bounding-box regression loss.",
-        "Inference & API: Flask-based inference engine delivering sub-second frame processing and automated breach logging.",
-        "Interface: Streamlit operations dashboard displaying real-time video stream annotations and compliance logs.",
-      ],
-      highlights: [
-        "Curated and labeled a 5,000+ image dataset under real-world mining and coal field conditions.",
-        "Achieved approximately 77% mean Average Precision (mAP) on critical safety gear classes.",
-        "Enabled sub-second inference for immediate non-compliance alerts.",
-      ],
-      results: "Delivered a verified 77% mAP detection pipeline with sub-second latency across 5,000+ annotated industrial images.",
-    },
-  },
-  {
-    id: "bccl-predictive-analytics",
-    number: "08",
-    title: "BCCL Predictive Analytics Platform",
-    subtitle: "Industrial Operational Modeling & Predictive Intelligence",
-    category: "Machine Learning",
-    shortDescription:
-      "Predictive modeling and operational analytics framework developed during BCCL internship for industrial equipment telemetry, maintenance forecasting, and operational efficiency analysis.",
-    overview:
-      "Applied statistical machine learning and exploratory time-series modeling to historical operational data from mining operations to forecast operational bottlenecks and identify predictive maintenance patterns.",
-    techStack: [
-      "Python",
-      "Scikit-learn",
-      "XGBoost",
-      "Pandas",
-      "NumPy",
-      "Plotly",
-    ],
-    links: {
-      github: "https://github.com/ayushrajcodes0407",
-      demo: "",
-    },
-    featured: true,
-    metrics: [
-      { label: "Domain", value: "Industrial Mining" },
-      { label: "Modeling", value: "Time-Series / ML" },
-      { label: "Analytics", value: "Operational" },
-    ],
-    caseStudy: {
-      problem:
-        "Industrial coal mining operations generate vast quantities of operational and machinery data, but raw logs remain siloed, preventing proactive maintenance and operational optimization.",
-      solution:
-        "Developed a predictive analytics pipeline using gradient-boosted trees and statistical diagnostics to identify operational variance and model equipment performance trends.",
-      architecture: [
-        "Data Cleaning: Aggregated and processed disparate industrial telemetry and production logs.",
-        "Feature Engineering: Created rolling temporal aggregates, lag features, and anomaly flags.",
-        "Predictive Modeling: Trained regression and classification models to forecast operational efficiency indicators.",
-        "Interactive Dashboards: Built visual diagnostic charts using Plotly for engineering supervisors.",
-      ],
-      highlights: [
-        "Extracted actionable operational signals from complex industrial machinery logs.",
-        "Engineered temporal features capturing shift-based and machinery-utilization trends.",
-        "Delivered intuitive analytics dashboards for operational decision makers.",
-      ],
-      results: "Created a predictive modeling framework that translated raw mining operational data into structured predictive intelligence.",
+      results: "Built a functional Python voice assistant framework with continuous listening and system automation capabilities.",
     },
   },
   {
     id: "be11-sports-platform",
-    number: "09",
+    number: "10",
     title: "BE11",
-    subtitle: "High-Concurrency Sports Venue Booking & Match Experience Platform",
+    subtitle: "High-Concurrency Sports Venue Booking & Match Platform",
     category: "Full-Stack Systems",
     shortDescription:
       "A high-performance sports venue booking platform designed for cricket and football, featuring venue discovery, seamless booking flows, secure payments, vendor management, and admin controls.",
@@ -444,13 +509,13 @@ export const featuredProjects = [
       "Vercel",
     ],
     links: {
-      github: "https://github.com/ayushrajcodes0407",
+      github: "",
       demo: "",
     },
     featured: true,
     metrics: [
       { label: "Transactions", value: "ACID Atomic" },
-      { label: "Performance", value: "<50ms Latency" },
+      { label: "Allocation", value: "<50ms Latency" },
       { label: "Security", value: "Role-Based RBAC" },
     ],
     caseStudy: {
@@ -474,12 +539,12 @@ export const featuredProjects = [
   },
   {
     id: "vacation-mantra-crm",
-    number: "10",
+    number: "11",
     title: "Vacation Mantra CRM & Safvora",
     subtitle: "Enterprise Operations CRM & Luxury Bespoke Gifting Storefront",
     category: "Full-Stack Systems",
     shortDescription:
-      "Enterprise customer relationship management platform with automated lead distribution funnels alongside Safvora.gifting—a luxury bespoke e-commerce storefront.",
+      "Enterprise customer relationship management platform with automated lead distribution funnels alongside Safvora.gifting, a luxury bespoke e-commerce storefront.",
     overview:
       "A dual showcase of production web engineering: a high-throughput enterprise CRM platform designed for lead management, customer booking workflows, and employee hierarchy at Vacation Mantra Technologies, alongside Safvora.gifting, a motion-driven luxury storefront.",
     techStack: [
@@ -492,7 +557,7 @@ export const featuredProjects = [
       "Framer Motion",
     ],
     links: {
-      github: "https://github.com/ayushrajcodes0407",
+      github: "",
       demo: "",
     },
     featured: true,

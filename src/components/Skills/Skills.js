@@ -36,7 +36,7 @@ export default function Skills() {
                     <div key={skill.name} className={styles.skillTag}>
                       <span className={styles.skillIcon}>{skill.icon}</span>
                       <span className={styles.skillName}>{skill.name}</span>
-                      <span className={styles.skillLevel}>{skill.level}</span>
+                      {skill.level && <span className={styles.skillLevel}>{skill.level}</span>}
                     </div>
                   ))}
                 </div>

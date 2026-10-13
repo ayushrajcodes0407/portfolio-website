@@ -38,15 +38,15 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setStatus("sending");
-
-    setTimeout(() => {
-      setStatus("success");
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setTimeout(() => setStatus(null), 5000);
-    }, 800);
+    const mailtoUrl = `mailto:${contactEmail}?subject=${encodeURIComponent(
+      formData.subject || "Portfolio Inquiry"
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+    )}`;
+    window.location.href = mailtoUrl;
+    setStatus("client_opened");
   };
 
   const githubLink = socialLinks.find((s) => s.name === "GitHub")?.url || "https://github.com/ayushrajcodes0407";
@@ -300,9 +300,9 @@ export default function Contact() {
                 )}
               </Button>
 
-              {status === "success" && (
+              {status === "client_opened" && (
                 <div className={styles.successMsg}>
-                  ✓ Message transmitted successfully. I will get back to you promptly.
+                  Opening your email client to send your message directly to {contactEmail}.
                 </div>
               )}
             </form>

@@ -7,10 +7,11 @@ import styles from "./IntroCover.module.css";
 
 const COVER_ROLES = [
   "AI/ML ENGINEER",
+  "MACHINE LEARNING ENGINEER",
   "DATA SCIENTIST",
-  "FULL-STACK DEVELOPER",
+  "AI RESEARCHER",
+  "NLP & LLM ENGINEER",
   "COMPUTER VISION ENGINEER",
-  "AI PRODUCT BUILDER",
 ];
 
 export default function IntroCover() {
@@ -581,17 +582,17 @@ export default function IntroCover() {
         <span className={`${styles.particle} ${styles.p6}`} />
       </div>
 
-      {/* Central Portrait Visual Stage — Integrated Depth */}
+      {/* Central Portrait Visual Stage: Integrated Depth */}
       <div className={styles.portraitStage}>
         <div ref={portraitRef} className={styles.portraitContainer}>
           {/* Subtle rim light bloom behind silhouette */}
           <div className={styles.portraitBacklight} aria-hidden="true" />
 
           <Image
-            src={getAssetPath("/yolo_cutout_png.png")}
-            alt="Ayush Raj — AI/ML Engineer"
-            width={740}
-            height={920}
+            src={getAssetPath("/images/ayush-hero-transparent.png")}
+            alt="Ayush Raj | AI/ML Engineer"
+            width={1145}
+            height={1374}
             priority
             className={styles.portraitImg}
             draggable="false"

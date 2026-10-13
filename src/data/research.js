@@ -48,9 +48,9 @@ export const researchData = {
     id: "mental-health-conference-paper",
     title:
       "A Two-Stage, Risk-Aware Transformer Framework for Early Screening of Mental-Health Conditions and Suicidal Ideation in Social-Media Text",
-    conference: "3rd International Conference on Intelligent Systems & Security",
-    status: "Forthcoming",
-    statusBadge: "Conference Paper — Forthcoming",
+    conference: "3rd International Conference on Intelligent Systems & Security (2027)",
+    status: "Submitted for Review",
+    statusBadge: "Conference Paper · Submitted for Review (2027)",
     authors: [
       "Ayush Raj",
       "Abhinav Srivastava",
@@ -84,13 +84,13 @@ export const researchData = {
 
   timeline: [
     {
-      year: "2025",
-      badge: "RESEARCH INTERNSHIP",
+      year: "2026",
+      badge: "RESEARCH INTERNSHIP (MAY–JUL 2026)",
       title: "Norwegian University of Science and Technology (NTNU)",
-      subtitle: "International Research Internship & Computational Laboratory",
+      subtitle: "International AI/ML Research Internship under Dr. Alok Mishra",
       category: "Research Credential",
       details:
-        "Engaged in advanced computational workflows, machine learning experimentation, and international academic research collaboration.",
+        "Engaged in advanced computational workflows, machine learning experimentation, and transformer NLP research under Dr. Alok Mishra.",
     },
     {
       year: "2026",
@@ -102,13 +102,13 @@ export const researchData = {
         "Hierarchical transformer framework combining two-stage classification with rule-based safety decision layers for clinical mental health screening.",
     },
     {
-      year: "2026",
-      badge: "FORTHCOMING CONFERENCE WORK",
+      year: "2027",
+      badge: "SUBMITTED FOR REVIEW (ICISS 2027)",
       title: "3rd International Conference on Intelligent Systems & Security",
       subtitle: "Two-Stage Risk-Aware Screening in Social-Media Text",
       category: "Conference Paper",
       details:
-        "Presented research on hierarchical transformer models for early detection of mental health conditions and suicidal ideation in unstructured social media text.",
+        "Research paper submitted for review presenting hierarchical transformer architectures for high-sensitivity mental health screening.",
     },
   ],
 };

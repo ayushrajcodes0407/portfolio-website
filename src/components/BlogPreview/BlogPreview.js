@@ -13,7 +13,7 @@ export default function BlogPreview({ posts = [] }) {
         <AnimateOnScroll>
           <SectionHeading
             title="Blog & Insights"
-            subtitle="Sharing my learnings in ML, AI, and data science — one post at a time"
+            subtitle="Sharing my learnings in ML, AI, and data science, one post at a time"
           />
         </AnimateOnScroll>
 
